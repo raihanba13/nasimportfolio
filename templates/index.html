@@ -392,7 +392,7 @@
 						</div>
 						<div class="details">
 							<h4 class="my-0 title"><a href="{% url 'work_detail' work.pk %}">{{ work.title }}</a></h4>
-							
+							<p class="my-0 title"><a href="{% url 'work_detail' work.pk %}">{{ work.short_desciption }}</a></p>
 							<ul class="list-inline">
 								<li class="list-inline-item"><i class="icofont-user"></i> {{work.author.last_name }}</li>
 								<li class="list-inline-item"><i class="icofont-clock-time"></i> {{ work.created_on | timesince }}</li>
@@ -623,7 +623,7 @@
 						</div>
 						<div class="details">
 							<h4 class="my-0 title"><a href="{% url 'blog_detail' post.pk %}">{{ post.title }}</a></h4>
-							
+							<p class="my-0 title"><a href="{% url 'work_detail' post.pk %}">{{ post.short_desciption }}</a></p>
 							<ul class="list-inline">
 								<li class="list-inline-item"><i class="icofont-user"></i> {{post.author.last_name }}</li>
 								<li class="list-inline-item"><i class="icofont-clock-time"></i> {{ post.created_on | timesince }}</li>
