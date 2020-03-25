@@ -8,18 +8,15 @@ Prerequisite:
 Install:
 Download or clone the reposatory. Goto project root folder.
 
-nasimportfolio>virtualenv djnago
-nasimportfolio>cd djnago
-nasimportfolio\django>scripts\activate.bat
+C:\nasimportfolio>virtualenv djnago
+C:\nasimportfolio>cd djnago
+C:\nasimportfolio\django>scripts\activate.bat
 
-In settings.py which is in personal folder change postgresql user and password. 
+(django)C:\nasimportfolio\django>cd ..
+(django)C:\nasimportfolio>pip install -r requirements.txt
+(django)C:\nasimportfolio>python manage.py migrate
+(django)C:\nasimportfolio>python manage.py runserver
 
-
-(django)nasimportfolio\django>cd ..
-(django)nasimportfolio>pip install -r requirements.txt
-(django)nasimportfolio>python manage.py migrate
-(django)nasimportfolio>python manage.py runserver
-
-
+http://localhost:8000
 
 It's ready to deploy in heroku.
