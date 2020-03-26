@@ -71,3 +71,8 @@ DATABASES = {
 }
 
 Congrats! everything is setup. Your project ready to deploy in heroku for live your project online.
+
+Get any error, send me the scrrenshot at my inbox, i will try to give you the solution.
+https://facebook.com/Nasim.nimu2011
+
+
