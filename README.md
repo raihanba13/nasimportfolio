@@ -35,24 +35,39 @@ then go to http://localhost:8000/admin to accesss your administrations to contro
 It's ready to deploy in heroku.Before deploy in heroku, change the local database in settings.py according to:
 
 You will find database settings like this.
+
 DATABASES = {
+    
     'default': {
+        
         'ENGINE': 'django.db.backends.sqlite3',
+        
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+   
+   }
+
 }
 
 You need to change it like below,
+
 DATABASES = {
+    
     'default': {
+        
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       
         'NAME': 'personal_db',
+        
         'USER': 'your user',
+        
         'PASSWORD': 'your password',
+        
         'HOST': 'localhost',
+        
         'PORT': '2000',
         
     }
+
 }
 
 Congrats! everything is setup. Your project ready to deploy in heroku for live your project online.
